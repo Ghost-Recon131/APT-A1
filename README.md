@@ -1,2 +1,8 @@
-# APT-A1
-APT COSC1076 Assignment 1 code
+# APT Assignment 1
+#### Name: Jingxuan Feng
+#### Student Number: Student Number
+
+## CMake
+
+
+## Compile Command
