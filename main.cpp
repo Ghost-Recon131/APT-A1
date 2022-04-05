@@ -83,8 +83,7 @@ void readEnvStdin(Env& env, int& rows, int& cols) {
             lengthBuffer += 256;
             char* oldBuffer = arrayBuffer;
             char* newBuffer = new char[lengthBuffer];
-            for (int index = 0; index < countBuffer; index++) {
-
+            for (size_t index = 0; index < countBuffer; index++) {
                 newBuffer[index] = oldBuffer[index];
             }
             delete oldBuffer;
