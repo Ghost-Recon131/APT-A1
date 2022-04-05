@@ -8,12 +8,25 @@ diff --brief --report-identical-files sampleTest/sample01.out sampleTest/sample0
 
 # Test using test cases written by me
 # Will loop through all test cases
-FolderLocation="TestCases/*.env"
+FolderLocation="TestCases/m2-3/*.env"
 TestCaseFileName="TC"
 Count=1
 for files in $FolderLocation
 do
-  ./assign1 <TestCases/$TestCaseFileName$Count.env > TestCases/$TestCaseFileName$Count.out
-  diff --brief --report-identical-files TestCases/$TestCaseFileName$Count.out TestCases/$TestCaseFileName$Count.expout
+  ./assign1 <TestCases/m2-3/$TestCaseFileName$Count.env > TestCases/m2-3/$TestCaseFileName$Count.out
+  diff --brief --report-identical-files TestCases/m2-3/$TestCaseFileName$Count.out TestCases/m2-3/$TestCaseFileName$Count.expout
   ((Count=Count+1))
+done
+
+# Runs tests for milestone 4
+echo""
+echo "Running Milestone 4 tests"
+M4FolderLocation="TestCases/m4/*.env"
+M4TestCaseFileName="M4_TC"
+M4_Count=1
+for files in $M4FolderLocation
+do
+  ./assign1 <TestCases/m4/$M4TestCaseFileName$M4_Count.env > TestCases/m4/$M4TestCaseFileName$M4_Count.out
+  diff --brief --report-identical-files TestCases/m4/$M4TestCaseFileName$M4_Count.out TestCases/m4/$M4TestCaseFileName$M4_Count.expout
+  ((M4_Count=M4_Count+1))
 done
