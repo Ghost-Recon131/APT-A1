@@ -34,10 +34,10 @@ public:
    //    The path should be a DEEP COPY
    NodeList* getPath();
 
-
-   /*                                           */
-   /* YOU MAY ADD YOUR MODIFICATIONS HERE       */
-   /*                                           */
+private:
+   int lengthX, lengthY;
+   int startX, startY;
+   Env env;
 
 };
 

@@ -2,29 +2,35 @@
 #include "Node.h"
 
 
-Node::Node(int row, int col, int distanceToS){
-   this -> row = row;
-   this -> col = col;
-   this -> distanceToS = distanceToS;
-
+Node::Node(int row, int col, int distanceToS) {
+   this->row = row;
+   this->col = col;
+   this->distanceToS = distanceToS;
 }
     
 Node::~Node(){
-   // Intentionally empty destructor
+   // Intentionally empty
 }
 
-int Node::getRow(){
-   return row;
+// Added as part of M4 implementation
+Node::Node(Node* node) {
+   this->row = node->row;
+   this->col = node->col;
+   this->distanceToS = node->distanceToS;
 }
 
-int Node::getCol(){
-   return col;
+int Node::getRow() {
+   return this->row;
 }
 
-int Node::getDistanceToS(){
-   return distanceToS;
+int Node::getCol() {
+   return this->col;
+}
+
+int Node::getDistanceToS() {
+   return this->distanceToS;
 }
 
 void Node::setDistanceToS(int distanceToS){
-    this->distanceToS = distanceToS + 1;
+   this->distanceToS = distanceToS;
 }

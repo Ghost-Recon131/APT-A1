@@ -7,6 +7,7 @@ include_directories(.)
 
 add_executable(APT_A1
         main.cpp
+        milestone4.cpp
         milestone4.h
         Node.cpp
         Node.h

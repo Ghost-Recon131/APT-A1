@@ -25,17 +25,18 @@ public:
    /*                                           */
    /* YOU MAY ADD YOUR MODIFICATIONS HERE       */
    /*                                           */
+
+   // clone constructor
+   Node(Node* node);
    
    // Constructor/Destructor
    Node(int row, int col, int distanceToS);
    ~Node();
-    
-    
+
 private:
     int row;
     int col;
-    int distanceToS;
-    
+    int distanceToS;    
 
 };
 
