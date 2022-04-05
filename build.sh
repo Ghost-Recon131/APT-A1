@@ -1,1 +1,1 @@
-g++ -g -I. main.cpp Node.cpp NodeList.cpp PathPlanner.cpp milestone4.cpp -o assign1
+g++ -Wall -Werror -std=c++14 -O -o assign1 main.cpp Node.cpp NodeList.cpp PathPlanner.cpp milestone4.cpp
