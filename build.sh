@@ -1,0 +1,1 @@
+g++ -g -I. main.cpp Node.cpp NodeList.cpp PathPlanner.cpp milestone4.cpp -o assign1
