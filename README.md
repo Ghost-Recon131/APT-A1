@@ -41,11 +41,11 @@ Just the sample test and expected output given.
 ## TestCases
 Contains test cases written by me as part of Milestone 1. 
 
-Test Cases 1 - Number 
+Milestone 2&3 Test Cases 1 - 8 
 - Tests basic functionality of Milestone 2-3
 - Includes scenarios of multiple routes to goal, unreachable spaces in maze, multiple routes with same distance to G. 
 
-Test Cases Number - Number 
+Milestone 4 Test Cases 1 - 7
 - Tests basic functionality of Milestone 4
 - Includes environment of either larger or smaller than 20x20
 - Includes scenarios of multiple routes to goal, unreachable spaces in maze, multiple routes with same distance to G. 
