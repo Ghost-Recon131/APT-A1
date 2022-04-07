@@ -11,6 +11,11 @@ resulting in a failed test run when compared with .out files.
 dos2unix testCaseName.expout
 ```
 - This should remove CRLF line endings from all tests. 
+- dos2unix package will be needed to installed before running the script. On linux distros with Advanced Packaging Tool 
+  (APT) run the following command: 
+```
+sudo apt-get install dos2unix
+```
 
 ## Shell Scripts
 To run these, use the following command to give permission to the shell script in terminal
