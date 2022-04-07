@@ -2,6 +2,15 @@
 Name: Jingxuan Feng
 Student Number: s3843790
 
+# Known Bugs
+- When switching branches in my Git Repository, CRLF line endings seem to be added again to all .expout test cases,
+resulting in a failed test run when compared with .out files.
+- This behavior is not always consistent, and I am unsure how to fix it. 
+- A script has been provided loop through the test files and run the following command:  
+```
+dos2unix testCaseName.expout
+```
+- This should remove CRLF line endings from all tests. 
 
 ## Shell Scripts
 To run these, use the following command to give permission to the shell script in terminal
@@ -18,11 +27,13 @@ g++ -Wall -Werror -std=c++14 -O -o assign1 main.cpp Node.cpp NodeList.cpp PathPl
 ### clean.sh
 Deletes the compiled binary 'assign1' as well as any .out files generated during testing. 
 
+### fixCRLF.sh
+Removes CRLF line endings from all .expout files. 
 
 ### test.sh
-Calls "clean.sh" then "build.sh". It then inputs the provided sample environment and matches the output to the expected output.
-This process is then repeated for all the tests I have written. At then end, it outputs the results of the comparison.
-Such as : 
+Calls "clean.sh", "build.sh" then "fixCRLF.sh". It then inputs the provided sample environment and matches the output to 
+the expected output. This process is then repeated for all the tests I have written. At then end, it outputs the results 
+of the comparison. Such as : 
 
 ```
 Files sampleTest/sample01.out and sampleTest/sample01.expout are identical
@@ -55,4 +66,4 @@ Contains test cases written by me as part of Milestone 1.
 ## Known Behaviors
 - Program will prefer turning right rather than left when paths to G are of the same length. (See test case 10)
 - Program will prefer going up rather than down when paths to G are of the same length. (See test case 11)
-- Shortest path will always be calculated. 
+- Shortest path will always be calculated.
