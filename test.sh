@@ -1,6 +1,6 @@
 # Cleanup then rebuild
-sh clean.sh
-sh build.sh
+./clean.sh
+./build.sh
 
 # Run sample test provided
 ./assign1 < sampleTest/sample01.env > sampleTest/sample01.out
