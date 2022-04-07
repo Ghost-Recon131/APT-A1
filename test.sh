@@ -1,6 +1,9 @@
 # Cleanup then rebuild
 ./clean.sh
 ./build.sh
+./fixCRLF.sh
+echo ""
+echo "Start testing"
 
 # Run sample test provided
 ./assign1 < sampleTest/sample01.env > sampleTest/sample01.out
