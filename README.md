@@ -34,18 +34,25 @@ Files TestCases/TC2.out and TestCases/TC2.expout are identical
 Used in CLion to test & debug, should not be used for actual compilation.
 
 
-## Test Cases 
+# Test Cases 
 ### sampleTest
 Just the sample test and expected output given.
 
-## TestCases
+## TestCases Directory
 Contains test cases written by me as part of Milestone 1. 
 
-Milestone 2&3 Test Cases 1 - 8 
+### Milestone 2&3 Test Cases 1 - 8 
 - Tests basic functionality of Milestone 2-3
 - Includes scenarios of multiple routes to goal, unreachable spaces in maze, multiple routes with same distance to G. 
 
-Milestone 4 Test Cases 1 - 7
+### Milestone 4 Test Cases 1 - 10
 - Tests basic functionality of Milestone 4
 - Includes environment of either larger or smaller than 20x20
-- Includes scenarios of multiple routes to goal, unreachable spaces in maze, multiple routes with same distance to G. 
+- Includes scenarios of multiple routes to goal, unreachable spaces in maze, multiple routes with same distance to G.
+- Program will take some time (10-30sec depending on system specs)to complete Test Cases 7-10 as these use a fairly 
+- larger sized environment. 
+
+## Known Behaviors
+- Program will prefer turning right rather than left when paths to G are of the same length. (See test case 10)
+- Program will prefer going up rather than down when paths to G are of the same length. (See test case 11)
+- Shortest path will always be calculated. 
