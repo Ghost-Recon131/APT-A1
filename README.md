@@ -56,7 +56,7 @@ Contains test cases written by me as part of Milestone 1.
 - Tests basic functionality of Milestone 2-3
 - Includes scenarios of multiple routes to goal, unreachable spaces in maze, multiple routes with same distance to G. 
 
-### Milestone 4 Test Cases 1 - 10
+### Milestone 4 Test Cases 1 - 11
 - Tests basic functionality of Milestone 4
 - Includes environment of either larger or smaller than 20x20
 - Includes scenarios of multiple routes to goal, unreachable spaces in maze, multiple routes with same distance to G.
